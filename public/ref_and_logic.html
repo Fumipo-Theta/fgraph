@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv=”Cache-Control” content=”no-cache”>
+
+  <link rel="icon" type="image/png" href="./image/image.png" sizes="64x64">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../csslib/font-awesome-4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/light_theme.css" id="dynamic_theme">
+  <link rel="stylesheet" href="./css/modal_window.css">
+  <link rel="stylesheet" href="../jslib/highlight/styles/tomorrow-night-bright.css">
+  <script src="../jslib/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <title>fGRAPH</title>
+
+  <!--fantastic Graphical Relationship Analyzer with Presentation Helper-->
+</head>
+
+<body>
+  <div class="widget">
+    <img id="my_photo" src="./image/ProfilePhoto.jpg">
+    <span id="logo">fGRAPH</span>
+    <input type="file" id="inputJsonFile" accept=".json" style="display:none" disabled=true>
+    <label for="inputJsonFile" class="button square">Select Network structure file</label>
+    <span id="graph_file_label"></span>
+
+    <!-- テーマを変更できるようにする 
+      urlのクエリでテーマを指定できるようにもする
+    -->
+    <div class="button-like square">
+      <span>Appearence</span>
+      <select id="style_changer">
+        <option value="light_theme">Logic Light</option>
+        <option value="dark_theme">Logic Dark</option>
+        <option value="light_theme_researchTool">Research Light</option>
+        <option value="dark_theme_researchTool">Research Dark</option>
+      </select>
+    </div>
+    <!-- プレゼンテーションのため画面解像度を指定できるようにする -->
+  </div>
+
+  <!--div id="tips">
+    ## ここにキーボードショートカットのリストを表示する
+
+    - Contents表示モード
+    - ノードサマリー表示モード
+  </div -->
+
+  <div id="float_buttons">
+    <div id="sub_btn_containor" class="active">
+      <div class="v_btn_list">
+        <div id="btn_tree_map" class="button round active">Tree</div>
+        <div id="btn_flat_map" class="button round">Flat</div>
+      </div>
+      <div class="v_btn_list">
+        <div id="btn_show_content" class="button round active">Show</div>
+        <div id="btn_fold_node" class="button round">Fix</div>
+        <div id="btn_summarize_node" class="button round">Summary</div>
+      </div>
+    </div>
+    <div id="btn_expand_menu" class="button round active">×</div>
+  </div>
+
+  <div id="viewer_container" class="container">
+  </div>
+
+  <!-- モーダルウィンドウの背後を隠す -->
+  <div id="modal_container">
+    <div id="modal_window" class="render_markdown">
+      <!--div id="button_close_modal_window"></div-->
+
+    </div>
+  </div>
+</body>
+
+
+
+<script src="../jslib/d3.v4.min.js"></script>
+<script src="../jslib/marked.min.js"></script>
+<script src="../jslib/pub_sub.js"></script>
+<script src="../jslib/dom_toggler.js"></script>
+<script src="../node_modules/asciidoctor.js/dist/asciidoctor.js"></script>
+<script src="./js/node.js"></script>
+<script src="./js/media.js"></script>
+<script src="../node_modules/viz.js/viz.js"></script>
+<script src="../jslib/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+      }
+    });
+</script>
+<script type="text/javascript">
+
+</script>
+
+
+</html>
