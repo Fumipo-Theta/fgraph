@@ -143,6 +143,9 @@
       setGraphProperty(opt) {
         this.nodeSize = opt.nodeSize;
         this.edgeStrength = opt.edgeStrength;
+        this.author = (opt.hasOwnProperty("authorIs")) ?
+          opt.authorIs
+          : { default: { fontStyle: "normal", r: 20, fontSize: 16 } };
       }
 
       nodeType(node) {
@@ -164,9 +167,9 @@
       authorIs(author) {
         return (!author) ?
           { fontStyle: "normal", r: 20, fontSize: 16 }
-          : (author === "self") ?
-            { fontStyle: "normal", r: 20, fontSize: 16 }
-            : { fontStyle: "italic", r: 10, fontSize: 12 }
+          : (this.author.hasOwnProperty(author)) ?
+            this.author[author]
+            : this.author["default"];
       }
 
       readFile(file) {

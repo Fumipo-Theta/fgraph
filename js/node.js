@@ -67,7 +67,7 @@
       return this;
     }
 
-    static setSequencialId(nodes, init = 0) {
+    static setSequentialId(nodes, init = 0) {
       Node.resetCount(init);
       const n = nodes.length - 1;
       nodes.forEach(node => {
