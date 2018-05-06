@@ -1,0 +1,8 @@
+== To do
+
+* [ ] 巡回有向グラフを表現可能にする
+  ** 子ノードと親ノードの組をメモしておき, 同じものが現れたら再帰から抜ける
+* [ ] スタイルシートをドラッグアンドドロップで反映させられるようにする.
+
+* [ ] fNODEのアクロニムを考える. funtastic Notation for inter-Object Dependency Efficiently ?
+

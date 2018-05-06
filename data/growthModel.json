@@ -1,0 +1,592 @@
+{
+  "setting": {
+    "nodeSize": {
+      "theory": {
+        "r": 10,
+        "charge": -200
+      },
+      "data": {
+        "r": 10,
+        "charge": -200
+      },
+      "model": {
+        "r": 20,
+        "charge": -1000
+      },
+      "inference": {
+        "r": 20,
+        "charge": -1000
+      },
+      "premise": {
+        "r": 15,
+        "charge": -200
+      },
+      "default": {
+        "r": 15,
+        "charge": -200
+      }
+    },
+    "edgeStrength": {
+      "assuming": {
+        "distance": 50,
+        "tension": 1
+      },
+      "supported by": {
+        "distance": 50,
+        "tension": 1
+      },
+      "consistent with": {
+        "distance": 50,
+        "tension": 1
+      },
+      "applied to": {
+        "distance": 50,
+        "tension": 1
+      },
+      "based on": {
+        "distance": 50,
+        "tension": 1
+      },
+      "default": {
+        "distance": 200,
+        "tension": 0.1
+      }
+    }
+  },
+  "graph": {
+    "custom": {
+      "author": "self",
+      "bibtex": ""
+    },
+    "contents": "../../../thesis/decode_zoning/common_zoning_formation.adoc",
+    "edges": [],
+    "parents": [],
+    "title": "multiple mixing, crystal growth, and lattice diffusion model",
+    "type": "model",
+    "depth": 0,
+    "id": 0,
+    "children": [
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": [
+          "= Multiple magma mixing model"
+        ],
+        "edges": [
+          "composed of"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "Multiple magma mixing",
+        "type": "model",
+        "depth": 1,
+        "id": 1,
+        "children": [
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "\n= 多段階のマグマ混合\n\n[simple]\n* 組成プロファイルの不連続はメルト組成が短い時間スケールで急に変化したことを示すと解釈可能\n\n",
+            "edges": [
+              "assuming"
+            ],
+            "parents": [
+              1
+            ],
+            "title": "多段階のマグマ混合",
+            "type": "premise",
+            "depth": 1,
+            "id": 8,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": "\n= 波動累帯構造における不連続な組成変化\n\nOpx斑晶のCrプロファイルが不連続に変化する\n\n== データソース\n \ndata/SVB/mineral/EPMA/opx_zoning_compile.csv#comment=1002-9-1C-1_line1\n",
+                "edges": [
+                  "consistent with"
+                ],
+                "parents": [
+                  8
+                ],
+                "title": "組成プロファイルの複数の不連続",
+                "type": "data",
+                "depth": 2,
+                "id": 9,
+                "children": []
+              }
+            ]
+          },
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 地殻混染は考慮しない\n\n== 根拠\n\n[simple]\n- 解析対象のホスト溶岩はSiO~2~濃度が低いのでSiO~2~濃度の大きいメルトの影響は少ないと判断\n- 地殻物質の外来結晶が著しく溶融した様子が見られない\n  - 外来結晶として高頻度で見られる石英やカリ長石は地表近くのマサと予想\n",
+            "edges": [
+              "assuming"
+            ],
+            "parents": [
+              1
+            ],
+            "title": "地殻混染は無い",
+            "type": "premise",
+            "depth": 1,
+            "id": 10,
+            "children": []
+          }
+        ]
+      },
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": [
+          "= Multiple crystal growth model\n\n== 概要\n\n波動累帯構造の形成を表現するため, ホストメルト組成が不連続に変化することを仮定した\n\n固相組成は液組成と分配係数のみで決まるとする\n"
+        ],
+        "edges": [
+          "composed of"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "Multiple growth",
+        "type": "model",
+        "depth": 1,
+        "id": 2,
+        "children": [
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 多段階の結晶成長\n\n== 仮定\n\n- マグマ混合後のホストメルトから晶出開始\n- ホストメルトは均質\n- 再溶融・溶食なし\n- 結晶成長のカイネティクスは考慮しない\n",
+            "edges": [
+              "assuming"
+            ],
+            "parents": [
+              2
+            ],
+            "title": "多段階の結晶成長",
+            "type": "premise",
+            "depth": 1,
+            "id": 11,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": "= Fe/MgとCr~2~O~3~の相関\n",
+                "edges": [
+                  "consistent with"
+                ],
+                "parents": [
+                  11
+                ],
+                "title": "組成プロファイルの相関",
+                "type": "data",
+                "depth": 2,
+                "id": 12,
+                "children": []
+              },
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": "= EPMAによる元素マッピング\n:imagesdir: ../../../document/データファイル/EPMAデータ/2013_0725Map\n\ninclude::../../../document/データファイル/EPMAデータ/2013_0725Map/opx_zoning_1002-9-1C-1.adoc[]\n",
+                "edges": [
+                  "consistent with",
+                  "consistent with"
+                ],
+                "parents": [
+                  11,
+                  17
+                ],
+                "title": "自形的な累帯構造",
+                "type": "data",
+                "depth": 2,
+                "id": 13,
+                "children": []
+              }
+            ]
+          },
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 結晶化のストイキオメトリー\n\n== 斑晶組み合わせ\n\n[simple]\n* Olivine\n  ** > 2mm 単結晶 骸晶\n  ** Opx集斑晶の中央部\n* Orthopyroxene\n  ** 自形 単結晶\n  ** 半自形 olivineをともなう集斑晶\n* Spinelはインクルージョンとして含まれる",
+            "edges": [
+              "assuming"
+            ],
+            "parents": [
+              2
+            ],
+            "title": "Stoichiometry of crystallization",
+            "type": "premise",
+            "depth": 1,
+            "id": 14,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": [
+                  "\n= Lava flow II の斑晶組み合わせ\n\n* Olivine\n* Orthopyroxene\n\n== Olivine\n\n. 大きな自形単結晶\n  ** 短柱状\n  ** 外縁部がスケルタル\n  ** 結晶内部が風化\n    *** 粘土鉱物が形成\n    *** opxが生成している部部分もある\n  ** リム部がイディングサイト化\n. Opxとの集斑晶の中央部\n  ** Mg#は全岩組成との平衡値以下\n\n== Opx\n\n. 自形単結晶\n  ** 長柱状\n  ** 波動累帯構造\n  ** 結晶の角にolivineが成長\n. Olivineとの集斑晶\n  ** 短柱状\n  ** olivineを取り巻くように存在\n  ** 波動累帯構造\n    *** 中央のolivineから外部のメルトに向かう方向に非対称\n    *** Olivine側のゾーニングが薄い傾向\n\n",
+                  "\n= Lava flow IIの微斑晶組み合わせ\n\n* Olivine\n* orthopyroxene\n* clinopyroxene\n* plagioclase\n* Fe-Ti oxide\n* Tridimyte\n\n== Olivine\n\n. 自形単結晶\n  ** 短柱状\n  ** リム部がイディングサイト化\n\n== Orthopyroxene\n\n・ 自形単結晶\n  ** 長柱状\n\n== clinopyroxene\n\n. 自形 or 他形単結晶\n  ** 短柱状\n. quartzの反応縁\n  ** 細粒結晶の集合体としてquartzを取り囲む\n  ** quartz周囲のガラス内部で骸晶として含まれるものも\n\n== plagioclase\n\n. 自形柱状\n  ** 双晶を成す\n\n== Fe-Ti oxide\n\n. 自形板状\n ** 斑晶の周囲のvagueに形成\n\n== tridimyte\n\n. 自形板状\n  ** 斑晶周囲のvagueに形成\n\n"
+                ],
+                "edges": [
+                  "consistent with",
+                  "consistent with"
+                ],
+                "parents": [
+                  14,
+                  16
+                ],
+                "title": "斑晶・微斑晶組み合わせ",
+                "type": "data",
+                "depth": 2,
+                "id": 15,
+                "children": []
+              }
+            ]
+          },
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 系の組成\n\n== SiO~2~ - MgO - FeO - Cr~2~O~3~ - Other system\n\n[simple]\n* Olivineとorthopyroxene\n  ** 主要元素: SiO~2~・MgO・FeO\n  ** 微量元素: Cr~2~O~3~\n* Spinel\n  ** Cr~2~O~3~のみ考慮\n",
+            "edges": [
+              "assuming"
+            ],
+            "parents": [
+              2
+            ],
+            "title": "系の組成",
+            "type": "premise",
+            "depth": 1,
+            "id": 16,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": [
+                  "\n= Lava flow II の斑晶組み合わせ\n\n* Olivine\n* Orthopyroxene\n\n== Olivine\n\n. 大きな自形単結晶\n  ** 短柱状\n  ** 外縁部がスケルタル\n  ** 結晶内部が風化\n    *** 粘土鉱物が形成\n    *** opxが生成している部部分もある\n  ** リム部がイディングサイト化\n. Opxとの集斑晶の中央部\n  ** Mg#は全岩組成との平衡値以下\n\n== Opx\n\n. 自形単結晶\n  ** 長柱状\n  ** 波動累帯構造\n  ** 結晶の角にolivineが成長\n. Olivineとの集斑晶\n  ** 短柱状\n  ** olivineを取り巻くように存在\n  ** 波動累帯構造\n    *** 中央のolivineから外部のメルトに向かう方向に非対称\n    *** Olivine側のゾーニングが薄い傾向\n\n",
+                  "\n= Lava flow IIの微斑晶組み合わせ\n\n* Olivine\n* orthopyroxene\n* clinopyroxene\n* plagioclase\n* Fe-Ti oxide\n* Tridimyte\n\n== Olivine\n\n. 自形単結晶\n  ** 短柱状\n  ** リム部がイディングサイト化\n\n== Orthopyroxene\n\n・ 自形単結晶\n  ** 長柱状\n\n== clinopyroxene\n\n. 自形 or 他形単結晶\n  ** 短柱状\n. quartzの反応縁\n  ** 細粒結晶の集合体としてquartzを取り囲む\n  ** quartz周囲のガラス内部で骸晶として含まれるものも\n\n== plagioclase\n\n. 自形柱状\n  ** 双晶を成す\n\n== Fe-Ti oxide\n\n. 自形板状\n ** 斑晶の周囲のvagueに形成\n\n== tridimyte\n\n. 自形板状\n  ** 斑晶周囲のvagueに形成\n\n"
+                ],
+                "edges": [
+                  "consistent with",
+                  "consistent with"
+                ],
+                "parents": [
+                  14,
+                  16
+                ],
+                "title": "斑晶・微斑晶組み合わせ",
+                "type": "data",
+                "depth": 2,
+                "id": 15,
+                "children": []
+              }
+            ]
+          },
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 固液界面で局所平衡が成立したもとでの結晶成長\n\n== 仮定\n\n[simple]\n* 結晶化の間結晶内部の組成は変化しない\n* 元素拡散のときも局所平衡\n",
+            "edges": [
+              "assuming",
+              "assuming"
+            ],
+            "parents": [
+              2,
+              3
+            ],
+            "title": "Local equilibrium",
+            "type": "premise",
+            "depth": 1,
+            "id": 17,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": "= EPMAによる元素マッピング\n:imagesdir: ../../../document/データファイル/EPMAデータ/2013_0725Map\n\ninclude::../../../document/データファイル/EPMAデータ/2013_0725Map/opx_zoning_1002-9-1C-1.adoc[]\n",
+                "edges": [
+                  "consistent with",
+                  "consistent with"
+                ],
+                "parents": [
+                  11,
+                  17
+                ],
+                "title": "自形的な累帯構造",
+                "type": "data",
+                "depth": 2,
+                "id": 13,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": [
+          "= Multiple elemental diffusion model\n\n== 概要\n\n* 結晶成長の後に元素拡散が開始\n* 拡散進行の温度・タイムスケールを表す変数を導入\n\n== 定式化\n\n* 次元拡散方程式を空間方向, 時間方向に無次元化 (Lasaga, 1983)\n\n$$\n    \\begin{equation}\n    \\frac{\\partial C_i}{\\partial t} = D(T(t)) \\frac{\\partial^2 C_i}{\\partial x^2}\n    \\end{equation}\n$$\n\n* クランクｰニコルソン法により陰解法で数値計算\n  ** 時間ステップは10分割\n\n== 元素拡散の温度・時間タイムスケール\n\n波動累帯構造が形成されるような状況においては, 冷却パスが複雑であるうえ, 温度の時間変化の推定が困難である.\n本研究の目的は, 元素拡散の影響を受ける前の物質の分布が興味の対象であり, 具体的な冷却パスに関する仮定を増やしたくない.\n\n結晶界面が時間とともに移動しないとき, 次のような変数を導入することで, 拡散係数の温度の陽な時間依存性を消すことができる.\nある時刻$t$までの拡散の進行度は, 拡散係数の時間積分によって得られる.\n拡散係数が温度依存性を持つとき, 単位時間あたりの拡散の進行度は温度に依存する.\n拡散進行後の量の空間分布を, 拡散の進行度で表すことを考える. \n拡散係数を初めの温度$T(t=0)$のときの拡散係数で規格化したものを, 積分したものを$\\tau(t)$と表すとすると, \n\n$$\n    \\begin{equation}\n    \\tau(t) = \\int^{t}_{0} \\left[ \\frac{D(T(\\hat{t}))}{D(0)} \\right]d\\hat{t}\n    \\end{equation}\n$$\n\nここで, 任意の異なる2つの時刻における温度を交換したとしても, $\\tau(t)$は変わらない.\nまた, このような操作を行っても時刻$t$までの拡散の進行度は変わらない. \n従って, $\\tau(t)$を用いることで拡散の進行度が等しくなるような, 全ての冷却パス$T(t)$を代表させることができる.\n\nまた, $\\tau(t)$は単調増加関数であり, その最大値が拡散終了時の量の空間分布に対応する.\n\n本研究では, $\\tau(t)$の最大値$\\tau^{total}$を未知数として推定することにした.\nこれにより, 冷却パスが未知であっても元素拡散の影響を考慮することが可能になった. \n\n== 問題点\n\n* 冷却パス$T(t)$が同じでも, 成分ごとに$\\tau^{total}$は異なるが, それが同一になっている\n  ** 元素拡散の効果が過大または過小になっている成分がある\n* 液相組成の時間変化を考慮していない\n  ** 元素拡散の効果が過小になっている\n\n"
+        ],
+        "edges": [
+          "composed of"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "Multiple diffusion",
+        "type": "model",
+        "depth": 1,
+        "id": 3,
+        "children": [
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 多段階の斑晶内元素拡散\n\n== 仮定\n\n- Cr~2~O~3~に比べFe/Mgプロファイルが均されているので元素拡散の影響がある\n- 各成分の拡散速度は温度のみに依存\n\n",
+            "edges": [
+              "assuming"
+            ],
+            "parents": [
+              3
+            ],
+            "title": "multiple lattice diffusion",
+            "type": "premise",
+            "depth": 1,
+            "id": 18,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": "= Cr~2~O~3~のほうがFe/Mgよりシャープ",
+                "edges": [
+                  "consistent with"
+                ],
+                "parents": [
+                  18
+                ],
+                "title": "組成プロファイルのシャープネス",
+                "type": "data",
+                "depth": 2,
+                "id": 19,
+                "children": []
+              }
+            ]
+          },
+          {
+            "custom": {
+              "author": "self",
+              "bibtex": ""
+            },
+            "contents": "= 固液界面で局所平衡が成立したもとでの結晶成長\n\n== 仮定\n\n[simple]\n* 結晶化の間結晶内部の組成は変化しない\n* 元素拡散のときも局所平衡\n",
+            "edges": [
+              "assuming",
+              "assuming"
+            ],
+            "parents": [
+              2,
+              3
+            ],
+            "title": "Local equilibrium",
+            "type": "premise",
+            "depth": 1,
+            "id": 17,
+            "children": [
+              {
+                "custom": {
+                  "author": "self",
+                  "bibtex": ""
+                },
+                "contents": "= EPMAによる元素マッピング\n:imagesdir: ../../../document/データファイル/EPMAデータ/2013_0725Map\n\ninclude::../../../document/データファイル/EPMAデータ/2013_0725Map/opx_zoning_1002-9-1C-1.adoc[]\n",
+                "edges": [
+                  "consistent with",
+                  "consistent with"
+                ],
+                "parents": [
+                  11,
+                  17
+                ],
+                "title": "自形的な累帯構造",
+                "type": "data",
+                "depth": 2,
+                "id": 13,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": [
+          "= 組成ゾーニング形成に関わるタイムスケール\n\n[simple]\n* 斑晶内拡散のタイムスケールは結晶成長タイムスケールより長い\n* 結晶成長終了後に元素拡散が始まる\n* マグマ混合の間は結晶成長も元素拡散も進行しない\n        "
+        ],
+        "edges": [
+          "assuming"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "Time scale of forming chemical zonig",
+        "type": "premise",
+        "depth": 1,
+        "id": 4,
+        "children": [
+          {
+            "custom": {
+              "author": "",
+              "bibtex": ""
+            },
+            "contents": [
+              "= 結晶成長のタイムスケール\n\n[simple]\n* olivine: 1300℃, 10um - $10^2 ～ 10^3$ s\n"
+            ],
+            "edges": [
+              "consistent with"
+            ],
+            "parents": [
+              4
+            ],
+            "title": "結晶成長のタイムスケール",
+            "type": "data",
+            "depth": 1,
+            "id": 20,
+            "children": []
+          },
+          {
+            "custom": {
+              "author": "",
+              "bibtex": ""
+            },
+            "contents": [
+              "= 斑晶内元素拡散のタイムスケール\n\n[format=csv,opx内部の拡散係数]\n----\nFe/Mg, Cr2O3\n----\n"
+            ],
+            "edges": [
+              "consistent with"
+            ],
+            "parents": [
+              4
+            ],
+            "title": "斑晶内元素拡散のタイムスケール",
+            "type": "data",
+            "depth": 1,
+            "id": 21,
+            "children": []
+          },
+          {
+            "custom": {
+              "author": "",
+              "bibtex": ""
+            },
+            "contents": [
+              "= マグマ混合のタイムスケール"
+            ],
+            "edges": [
+              "consistent with"
+            ],
+            "parents": [
+              4
+            ],
+            "title": "マグマ混合のタイムスケール",
+            "type": "data",
+            "depth": 1,
+            "id": 22,
+            "children": []
+          }
+        ]
+      },
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": "../../../Articles/Basalt/Annen et al-2006-The genesis of intermediate and silicic magmas in deep crustal hot zones.pdf",
+        "edges": [
+          "based on"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "pdf",
+        "type": "data",
+        "depth": 1,
+        "id": 5,
+        "children": []
+      },
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": [
+          "./readme.md",
+          "../../../toko/fitting_to_tanh.html",
+          "../../../Articles/Basalt/Annen et al-2006-The genesis of intermediate and silicic magmas in deep crustal hot zones.pdf"
+        ],
+        "edges": [
+          "based on"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "Read me",
+        "type": "data",
+        "depth": 1,
+        "id": 6,
+        "children": []
+      },
+      {
+        "custom": {
+          "author": "self",
+          "bibtex": ""
+        },
+        "contents": [
+          "./readme.adoc",
+          "\n# ここから2つめのコンテンツ(markdown literal)\n\n## 複数のタイプのメディアをロードする\n\n最初のコンテンツはasciidoc形式だったが, このコンテンツはmarkdown形式である\n",
+          "./image/test_diagram.html"
+        ],
+        "edges": [
+          "based on"
+        ],
+        "parents": [
+          0
+        ],
+        "title": "AsciiDoc",
+        "type": "data",
+        "depth": 1,
+        "id": 7,
+        "children": []
+      }
+    ]
+  }
+}

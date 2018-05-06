@@ -1,0 +1,1423 @@
+{
+  "custom": {
+    "author": "self",
+    "bibtex": ""
+  },
+  "contents": "SVBのHMAはマントルが浅所まで上昇し，部分溶融してできた．上昇マントルやHMAマグマの熱で下部地殻が溶融し，felsicなマグマが形成された．",
+  "edges": [],
+  "parents": [],
+  "title": "Conclusion",
+  "type": "inference",
+  "depth": 0,
+  "id": 0,
+  "children": [
+    {
+      "custom": {
+        "author": "self",
+        "bibtex": ""
+      },
+      "contents": "Updated",
+      "edges": [
+        "estimated by"
+      ],
+      "parents": [
+        0
+      ],
+      "title": "HMAの初生マグマ",
+      "type": "inference",
+      "depth": 1,
+      "id": 1,
+      "children": [
+        {
+          "custom": {
+            "author": "self",
+            "bibtex": ""
+          },
+          "contents": "",
+          "edges": [
+            "applied to",
+            "indicated by"
+          ],
+          "parents": [
+            24,
+            1
+          ],
+          "title": "HMAの初生メルト組成",
+          "type": "inference",
+          "depth": 1,
+          "id": 5,
+          "children": [
+            {
+              "custom": {
+                "author": "self",
+                "bibtex": ""
+              },
+              "contents": "MCMCサンプルの期待値から復元されたopx組成プロファイル",
+              "edges": [
+                "indicated by"
+              ],
+              "parents": [
+                5
+              ],
+              "title": "Restored profile of opx",
+              "type": "inference",
+              "depth": 2,
+              "id": 6,
+              "children": [
+                {
+                  "custom": {
+                    "author": "self",
+                    "bibtex": ""
+                  },
+                  "contents": "MCMCを用いて拡散の影響を受ける前の鉱物組成プロファイルを復元するモデル",
+                  "edges": [
+                    "estimated by"
+                  ],
+                  "parents": [
+                    6
+                  ],
+                  "title": "inversion model of diffused profile",
+                  "type": "model",
+                  "depth": 2,
+                  "id": 7,
+                  "children": [
+                    {
+                      "custom": {
+                        "author": "Metropolice 1956",
+                        "bibtex": ""
+                      },
+                      "contents": "MCMC and Metropolice's algorithm",
+                      "edges": [
+                        "based on"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "MCMC method",
+                      "type": "theory",
+                      "depth": 3,
+                      "id": 8,
+                      "children": []
+                    },
+                    {
+                      "custom": {
+                        "author": "Fukushima & Nemoto, 1998",
+                        "bibtex": ""
+                      },
+                      "contents": "Replica exchange",
+                      "edges": [
+                        "based on"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "PT-MCMC",
+                      "type": "theory",
+                      "depth": 3,
+                      "id": 9,
+                      "children": []
+                    },
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "",
+                      "edges": [
+                        "assuming"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "データの不確かさ",
+                      "type": "premise",
+                      "depth": 3,
+                      "id": 10,
+                      "children": []
+                    },
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "Opx成長時の組成と成長量を対応させるモデル",
+                      "edges": [
+                        "composed of"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "opx growth model",
+                      "type": "model",
+                      "depth": 3,
+                      "id": 11,
+                      "children": [
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            11
+                          ],
+                          "title": "Constant stoichiometry",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 15,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "界面で固相と液相の間での局所平衡が成立",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            11
+                          ],
+                          "title": "Local equilibrium",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 16,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "分配係数一定",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            11
+                          ],
+                          "title": "Constant partitioning",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 17,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "各ステージのLLDは溶岩の全岩組成を通る",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            11
+                          ],
+                          "title": "Liquid line of descent",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 18,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "球対称，再溶融なし",
+                          "edges": [
+                            "assuming",
+                            "assuming"
+                          ],
+                          "parents": [
+                            11,
+                            12
+                          ],
+                          "title": "Crystal geometry",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 19,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "固相はそれぞれ液相中にただ一つ存在する結晶で代表される",
+                          "edges": [
+                            "assuming",
+                            "assuming"
+                          ],
+                          "parents": [
+                            11,
+                            12
+                          ],
+                          "title": "Homogenous growth",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 20,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "圧縮時間を導入した元素拡散モデル",
+                      "edges": [
+                        "composed of"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "lattice diffusion model",
+                      "type": "model",
+                      "depth": 3,
+                      "id": 12,
+                      "children": [
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "成分によらずτtotalは共通",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            12
+                          ],
+                          "title": "Net time scale of diffusion",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 21,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "球対称，再溶融なし",
+                          "edges": [
+                            "assuming",
+                            "assuming"
+                          ],
+                          "parents": [
+                            11,
+                            12
+                          ],
+                          "title": "Crystal geometry",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 19,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "固相はそれぞれ液相中にただ一つ存在する結晶で代表される",
+                          "edges": [
+                            "assuming",
+                            "assuming"
+                          ],
+                          "parents": [
+                            11,
+                            12
+                          ],
+                          "title": "Homogenous growth",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 20,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "ホスト溶岩の全岩組成",
+                      "edges": [
+                        "applied to"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "start melt in fractionation",
+                      "type": "data",
+                      "depth": 3,
+                      "id": 13,
+                      "children": []
+                    },
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "もっとも初期からのイベントを記録したopxのFe/Mg, Cr2O3プロファイル",
+                      "edges": [
+                        "applied to"
+                      ],
+                      "parents": [
+                        7
+                      ],
+                      "title": "opx integrated profile",
+                      "type": "model",
+                      "depth": 3,
+                      "id": 14,
+                      "children": [
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "セグメントごとに線形に伸縮して重ね合わせられる",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            14
+                          ],
+                          "title": "異なる粒子のプロファイル対比",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 22,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "全ての粒子は注目している系の中に取り込まれてからずっと中にあった",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            14
+                          ],
+                          "title": "粒子ごとの歴史",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 23,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "custom": {
+        "author": "self",
+        "bibtex": ""
+      },
+      "contents": "これまでよりも高温，低圧,Harzburgite residue",
+      "edges": [
+        "estimated by"
+      ],
+      "parents": [
+        0
+      ],
+      "title": "Final equilibrium condition",
+      "type": "inference",
+      "depth": 1,
+      "id": 2,
+      "children": [
+        {
+          "custom": {
+            "author": "self",
+            "bibtex": ""
+          },
+          "contents": "alphaMELTSによる複数相飽和実験モデル",
+          "edges": [
+            "indicated by",
+            "indicated by"
+          ],
+          "parents": [
+            26,
+            2
+          ],
+          "title": "Multiple saturation by MELTS",
+          "type": "model",
+          "depth": 1,
+          "id": 24,
+          "children": [
+            {
+              "custom": {
+                "author": "Asimow et al",
+                "bibtex": ""
+              },
+              "contents": "メルトモデルMELTSのCUIフロントエンド",
+              "edges": [
+                "based on"
+              ],
+              "parents": [
+                24
+              ],
+              "title": "alphaMELTS",
+              "type": "model",
+              "depth": 2,
+              "id": 25,
+              "children": []
+            },
+            {
+              "custom": {
+                "author": "self",
+                "bibtex": ""
+              },
+              "contents": "",
+              "edges": [
+                "applied to",
+                "indicated by"
+              ],
+              "parents": [
+                24,
+                1
+              ],
+              "title": "HMAの初生メルト組成",
+              "type": "inference",
+              "depth": 1,
+              "id": 5,
+              "children": [
+                {
+                  "custom": {
+                    "author": "self",
+                    "bibtex": ""
+                  },
+                  "contents": "MCMCサンプルの期待値から復元されたopx組成プロファイル",
+                  "edges": [
+                    "indicated by"
+                  ],
+                  "parents": [
+                    5
+                  ],
+                  "title": "Restored profile of opx",
+                  "type": "inference",
+                  "depth": 2,
+                  "id": 6,
+                  "children": [
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "MCMCを用いて拡散の影響を受ける前の鉱物組成プロファイルを復元するモデル",
+                      "edges": [
+                        "estimated by"
+                      ],
+                      "parents": [
+                        6
+                      ],
+                      "title": "inversion model of diffused profile",
+                      "type": "model",
+                      "depth": 2,
+                      "id": 7,
+                      "children": [
+                        {
+                          "custom": {
+                            "author": "Metropolice 1956",
+                            "bibtex": ""
+                          },
+                          "contents": "MCMC and Metropolice's algorithm",
+                          "edges": [
+                            "based on"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "MCMC method",
+                          "type": "theory",
+                          "depth": 3,
+                          "id": 8,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "Fukushima & Nemoto, 1998",
+                            "bibtex": ""
+                          },
+                          "contents": "Replica exchange",
+                          "edges": [
+                            "based on"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "PT-MCMC",
+                          "type": "theory",
+                          "depth": 3,
+                          "id": 9,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "",
+                          "edges": [
+                            "assuming"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "データの不確かさ",
+                          "type": "premise",
+                          "depth": 3,
+                          "id": 10,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "Opx成長時の組成と成長量を対応させるモデル",
+                          "edges": [
+                            "composed of"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "opx growth model",
+                          "type": "model",
+                          "depth": 3,
+                          "id": 11,
+                          "children": [
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                11
+                              ],
+                              "title": "Constant stoichiometry",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 15,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "界面で固相と液相の間での局所平衡が成立",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                11
+                              ],
+                              "title": "Local equilibrium",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 16,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "分配係数一定",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                11
+                              ],
+                              "title": "Constant partitioning",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 17,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "各ステージのLLDは溶岩の全岩組成を通る",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                11
+                              ],
+                              "title": "Liquid line of descent",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 18,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "球対称，再溶融なし",
+                              "edges": [
+                                "assuming",
+                                "assuming"
+                              ],
+                              "parents": [
+                                11,
+                                12
+                              ],
+                              "title": "Crystal geometry",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 19,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "固相はそれぞれ液相中にただ一つ存在する結晶で代表される",
+                              "edges": [
+                                "assuming",
+                                "assuming"
+                              ],
+                              "parents": [
+                                11,
+                                12
+                              ],
+                              "title": "Homogenous growth",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 20,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "圧縮時間を導入した元素拡散モデル",
+                          "edges": [
+                            "composed of"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "lattice diffusion model",
+                          "type": "model",
+                          "depth": 3,
+                          "id": 12,
+                          "children": [
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "成分によらずτtotalは共通",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                12
+                              ],
+                              "title": "Net time scale of diffusion",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 21,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "球対称，再溶融なし",
+                              "edges": [
+                                "assuming",
+                                "assuming"
+                              ],
+                              "parents": [
+                                11,
+                                12
+                              ],
+                              "title": "Crystal geometry",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 19,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "固相はそれぞれ液相中にただ一つ存在する結晶で代表される",
+                              "edges": [
+                                "assuming",
+                                "assuming"
+                              ],
+                              "parents": [
+                                11,
+                                12
+                              ],
+                              "title": "Homogenous growth",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 20,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "ホスト溶岩の全岩組成",
+                          "edges": [
+                            "applied to"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "start melt in fractionation",
+                          "type": "data",
+                          "depth": 3,
+                          "id": 13,
+                          "children": []
+                        },
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "もっとも初期からのイベントを記録したopxのFe/Mg, Cr2O3プロファイル",
+                          "edges": [
+                            "applied to"
+                          ],
+                          "parents": [
+                            7
+                          ],
+                          "title": "opx integrated profile",
+                          "type": "model",
+                          "depth": 3,
+                          "id": 14,
+                          "children": [
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "セグメントごとに線形に伸縮して重ね合わせられる",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                14
+                              ],
+                              "title": "異なる粒子のプロファイル対比",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 22,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "全ての粒子は注目している系の中に取り込まれてからずっと中にあった",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                14
+                              ],
+                              "title": "粒子ごとの歴史",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 23,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "custom": {
+            "author": "self",
+            "bibtex": ""
+          },
+          "contents": "Harzburgitic",
+          "edges": [
+            "indicated by"
+          ],
+          "parents": [
+            2
+          ],
+          "title": "mantle residue",
+          "type": "inference",
+          "depth": 1,
+          "id": 26,
+          "children": [
+            {
+              "custom": {
+                "author": "self",
+                "bibtex": ""
+              },
+              "contents": "alphaMELTSによる複数相飽和実験モデル",
+              "edges": [
+                "indicated by",
+                "indicated by"
+              ],
+              "parents": [
+                26,
+                2
+              ],
+              "title": "Multiple saturation by MELTS",
+              "type": "model",
+              "depth": 1,
+              "id": 24,
+              "children": [
+                {
+                  "custom": {
+                    "author": "Asimow et al",
+                    "bibtex": ""
+                  },
+                  "contents": "メルトモデルMELTSのCUIフロントエンド",
+                  "edges": [
+                    "based on"
+                  ],
+                  "parents": [
+                    24
+                  ],
+                  "title": "alphaMELTS",
+                  "type": "model",
+                  "depth": 2,
+                  "id": 25,
+                  "children": []
+                },
+                {
+                  "custom": {
+                    "author": "self",
+                    "bibtex": ""
+                  },
+                  "contents": "",
+                  "edges": [
+                    "applied to",
+                    "indicated by"
+                  ],
+                  "parents": [
+                    24,
+                    1
+                  ],
+                  "title": "HMAの初生メルト組成",
+                  "type": "inference",
+                  "depth": 1,
+                  "id": 5,
+                  "children": [
+                    {
+                      "custom": {
+                        "author": "self",
+                        "bibtex": ""
+                      },
+                      "contents": "MCMCサンプルの期待値から復元されたopx組成プロファイル",
+                      "edges": [
+                        "indicated by"
+                      ],
+                      "parents": [
+                        5
+                      ],
+                      "title": "Restored profile of opx",
+                      "type": "inference",
+                      "depth": 2,
+                      "id": 6,
+                      "children": [
+                        {
+                          "custom": {
+                            "author": "self",
+                            "bibtex": ""
+                          },
+                          "contents": "MCMCを用いて拡散の影響を受ける前の鉱物組成プロファイルを復元するモデル",
+                          "edges": [
+                            "estimated by"
+                          ],
+                          "parents": [
+                            6
+                          ],
+                          "title": "inversion model of diffused profile",
+                          "type": "model",
+                          "depth": 2,
+                          "id": 7,
+                          "children": [
+                            {
+                              "custom": {
+                                "author": "Metropolice 1956",
+                                "bibtex": ""
+                              },
+                              "contents": "MCMC and Metropolice's algorithm",
+                              "edges": [
+                                "based on"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "MCMC method",
+                              "type": "theory",
+                              "depth": 3,
+                              "id": 8,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "Fukushima & Nemoto, 1998",
+                                "bibtex": ""
+                              },
+                              "contents": "Replica exchange",
+                              "edges": [
+                                "based on"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "PT-MCMC",
+                              "type": "theory",
+                              "depth": 3,
+                              "id": 9,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "",
+                              "edges": [
+                                "assuming"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "データの不確かさ",
+                              "type": "premise",
+                              "depth": 3,
+                              "id": 10,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "Opx成長時の組成と成長量を対応させるモデル",
+                              "edges": [
+                                "composed of"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "opx growth model",
+                              "type": "model",
+                              "depth": 3,
+                              "id": 11,
+                              "children": [
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11
+                                  ],
+                                  "title": "Constant stoichiometry",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 15,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "界面で固相と液相の間での局所平衡が成立",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11
+                                  ],
+                                  "title": "Local equilibrium",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 16,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "分配係数一定",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11
+                                  ],
+                                  "title": "Constant partitioning",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 17,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "各ステージのLLDは溶岩の全岩組成を通る",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11
+                                  ],
+                                  "title": "Liquid line of descent",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 18,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "球対称，再溶融なし",
+                                  "edges": [
+                                    "assuming",
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11,
+                                    12
+                                  ],
+                                  "title": "Crystal geometry",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 19,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "固相はそれぞれ液相中にただ一つ存在する結晶で代表される",
+                                  "edges": [
+                                    "assuming",
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11,
+                                    12
+                                  ],
+                                  "title": "Homogenous growth",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 20,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "圧縮時間を導入した元素拡散モデル",
+                              "edges": [
+                                "composed of"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "lattice diffusion model",
+                              "type": "model",
+                              "depth": 3,
+                              "id": 12,
+                              "children": [
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "成分によらずτtotalは共通",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    12
+                                  ],
+                                  "title": "Net time scale of diffusion",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 21,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "球対称，再溶融なし",
+                                  "edges": [
+                                    "assuming",
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11,
+                                    12
+                                  ],
+                                  "title": "Crystal geometry",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 19,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "固相はそれぞれ液相中にただ一つ存在する結晶で代表される",
+                                  "edges": [
+                                    "assuming",
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    11,
+                                    12
+                                  ],
+                                  "title": "Homogenous growth",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 20,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "ホスト溶岩の全岩組成",
+                              "edges": [
+                                "applied to"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "start melt in fractionation",
+                              "type": "data",
+                              "depth": 3,
+                              "id": 13,
+                              "children": []
+                            },
+                            {
+                              "custom": {
+                                "author": "self",
+                                "bibtex": ""
+                              },
+                              "contents": "もっとも初期からのイベントを記録したopxのFe/Mg, Cr2O3プロファイル",
+                              "edges": [
+                                "applied to"
+                              ],
+                              "parents": [
+                                7
+                              ],
+                              "title": "opx integrated profile",
+                              "type": "model",
+                              "depth": 3,
+                              "id": 14,
+                              "children": [
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "セグメントごとに線形に伸縮して重ね合わせられる",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    14
+                                  ],
+                                  "title": "異なる粒子のプロファイル対比",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 22,
+                                  "children": []
+                                },
+                                {
+                                  "custom": {
+                                    "author": "self",
+                                    "bibtex": ""
+                                  },
+                                  "contents": "全ての粒子は注目している系の中に取り込まれてからずっと中にあった",
+                                  "edges": [
+                                    "assuming"
+                                  ],
+                                  "parents": [
+                                    14
+                                  ],
+                                  "title": "粒子ごとの歴史",
+                                  "type": "premise",
+                                  "depth": 3,
+                                  "id": 23,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "custom": {
+                "author": "self",
+                "bibtex": ""
+              },
+              "contents": "olivineとメルトの反応組織",
+              "edges": [
+                "consistent with"
+              ],
+              "parents": [
+                26
+              ],
+              "title": "Olivine opx aggregate",
+              "type": "data",
+              "depth": 2,
+              "id": 27,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "custom": {
+        "author": "Mashima",
+        "bibtex": ""
+      },
+      "contents": "横ずれ断層の運動による地殻の薄化と低圧での溶融",
+      "edges": [
+        "consistent with"
+      ],
+      "parents": [
+        0
+      ],
+      "title": "SVBのテクトニクスとHMA形成条件",
+      "type": "inference",
+      "depth": 1,
+      "id": 3,
+      "children": []
+    },
+    {
+      "custom": {
+        "author": "浅見ほか",
+        "bibtex": ""
+      },
+      "contents": "felsicマグマは下部地殻の溶融メルト，HMAとも部分的に混合",
+      "edges": [
+        "consistent with"
+      ],
+      "parents": [
+        0
+      ],
+      "title": "下部地殻物質がSVBの火成活動に関与",
+      "type": "inference",
+      "depth": 1,
+      "id": 4,
+      "children": [
+        {
+          "custom": {
+            "author": "浅見ほか",
+            "bibtex": ""
+          },
+          "contents": "下部地殻由来と思われる捕獲岩の存在",
+          "edges": [
+            "supported by"
+          ],
+          "parents": [
+            4
+          ],
+          "title": "Xenocryst of granulite in HMA",
+          "type": "data",
+          "depth": 1,
+          "id": 28,
+          "children": []
+        },
+        {
+          "custom": {
+            "author": "浅見ほか",
+            "bibtex": ""
+          },
+          "contents": "HMAの一部やfelsic岩の同位体トレンドがgranulite質捕獲岩の方向に伸びる",
+          "edges": [
+            "supported by"
+          ],
+          "parents": [
+            4
+          ],
+          "title": "Sr-Nd Isotope",
+          "type": "data",
+          "depth": 1,
+          "id": 29,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

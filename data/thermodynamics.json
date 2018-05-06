@@ -1,0 +1,717 @@
+{
+  "type": "model",
+  "children": [
+    {
+      "type": "model",
+      "children": [
+        {
+          "type": "model",
+          "children": [
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "edges": [
+                    "assuming",
+                    "assuming",
+                    "assuming"
+                  ],
+                  "title": "標準圧力",
+                  "contents": "",
+                  "id": 1,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "edges": [
+                    "assuming",
+                    "assuming",
+                    "assuming"
+                  ],
+                  "title": "標準温度",
+                  "contents": "",
+                  "id": 2,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                8
+              ],
+              "edges": [
+                "based on"
+              ],
+              "title": "標準状態でのS",
+              "contents": "",
+              "id": 6,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                8,
+                14,
+                15
+              ],
+              "edges": [
+                "applied to",
+                "applied to",
+                "applied to"
+              ],
+              "title": "系の温度",
+              "contents": "",
+              "id": 4,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                8,
+                14,
+                15
+              ],
+              "edges": [
+                "applied to",
+                "applied to",
+                "applied to"
+              ],
+              "title": "系の圧力",
+              "contents": "",
+              "id": 3,
+              "author": "self"
+            }
+          ],
+          "parents": [
+            15,
+            17
+          ],
+          "edges": [
+            "based on",
+            "based on"
+          ],
+          "title": "反応のΔS",
+          "contents": "",
+          "id": 8,
+          "author": "self"
+        },
+        {
+          "type": "model",
+          "children": [
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "edges": [
+                    "assuming",
+                    "assuming",
+                    "assuming"
+                  ],
+                  "title": "標準圧力",
+                  "contents": "",
+                  "id": 1,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "edges": [
+                    "assuming",
+                    "assuming",
+                    "assuming"
+                  ],
+                  "title": "標準温度",
+                  "contents": "",
+                  "id": 2,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                14
+              ],
+              "edges": [
+                "based on"
+              ],
+              "title": "標準状態でのV",
+              "contents": "",
+              "id": 7,
+              "author": "self"
+            },
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    9
+                  ],
+                  "edges": [
+                    "assuming"
+                  ],
+                  "title": "ほぼ一定",
+                  "contents": "",
+                  "id": 10,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                14
+              ],
+              "edges": [
+                "based on"
+              ],
+              "title": "固相液相のV",
+              "contents": "",
+              "id": 9,
+              "author": "self"
+            },
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    11
+                  ],
+                  "edges": [
+                    "assuming"
+                  ],
+                  "title": "V=RT/P",
+                  "contents": "",
+                  "id": 12,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    11
+                  ],
+                  "edges": [
+                    "assuming"
+                  ],
+                  "title": "フガシティー",
+                  "contents": "",
+                  "id": 13,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                14
+              ],
+              "edges": [
+                "based on"
+              ],
+              "title": "気相のV",
+              "contents": "",
+              "id": 11,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                8,
+                14,
+                15
+              ],
+              "edges": [
+                "applied to",
+                "applied to",
+                "applied to"
+              ],
+              "title": "系の温度",
+              "contents": "",
+              "id": 4,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                8,
+                14,
+                15
+              ],
+              "edges": [
+                "applied to",
+                "applied to",
+                "applied to"
+              ],
+              "title": "系の圧力",
+              "contents": "",
+              "id": 3,
+              "author": "self"
+            }
+          ],
+          "parents": [
+            15,
+            17
+          ],
+          "edges": [
+            "based on",
+            "based on"
+          ],
+          "title": "反応のΔV",
+          "contents": "",
+          "id": 14,
+          "author": "self"
+        }
+      ],
+      "parents": [
+        19
+      ],
+      "edges": [
+        "based on"
+      ],
+      "title": "Univariantの傾き",
+      "contents": "クラペイロン方程式",
+      "id": 17,
+      "author": "self"
+    },
+    {
+      "type": "model",
+      "children": [
+        {
+          "type": "model",
+          "children": [
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "edges": [
+                    "assuming",
+                    "assuming",
+                    "assuming"
+                  ],
+                  "title": "標準圧力",
+                  "contents": "",
+                  "id": 1,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "edges": [
+                    "assuming",
+                    "assuming",
+                    "assuming"
+                  ],
+                  "title": "標準温度",
+                  "contents": "",
+                  "id": 2,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                15
+              ],
+              "edges": [
+                "based on"
+              ],
+              "title": "標準生成Gibbs自由エネルギー",
+              "contents": "",
+              "id": 5,
+              "author": "self"
+            },
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "model",
+                  "children": [
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        5,
+                        6,
+                        7
+                      ],
+                      "edges": [
+                        "assuming",
+                        "assuming",
+                        "assuming"
+                      ],
+                      "title": "標準圧力",
+                      "contents": "",
+                      "id": 1,
+                      "author": "self"
+                    },
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        5,
+                        6,
+                        7
+                      ],
+                      "edges": [
+                        "assuming",
+                        "assuming",
+                        "assuming"
+                      ],
+                      "title": "標準温度",
+                      "contents": "",
+                      "id": 2,
+                      "author": "self"
+                    }
+                  ],
+                  "parents": [
+                    8
+                  ],
+                  "edges": [
+                    "based on"
+                  ],
+                  "title": "標準状態でのS",
+                  "contents": "",
+                  "id": 6,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    8,
+                    14,
+                    15
+                  ],
+                  "edges": [
+                    "applied to",
+                    "applied to",
+                    "applied to"
+                  ],
+                  "title": "系の温度",
+                  "contents": "",
+                  "id": 4,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    8,
+                    14,
+                    15
+                  ],
+                  "edges": [
+                    "applied to",
+                    "applied to",
+                    "applied to"
+                  ],
+                  "title": "系の圧力",
+                  "contents": "",
+                  "id": 3,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                15,
+                17
+              ],
+              "edges": [
+                "based on",
+                "based on"
+              ],
+              "title": "反応のΔS",
+              "contents": "",
+              "id": 8,
+              "author": "self"
+            },
+            {
+              "type": "model",
+              "children": [
+                {
+                  "type": "model",
+                  "children": [
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        5,
+                        6,
+                        7
+                      ],
+                      "edges": [
+                        "assuming",
+                        "assuming",
+                        "assuming"
+                      ],
+                      "title": "標準圧力",
+                      "contents": "",
+                      "id": 1,
+                      "author": "self"
+                    },
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        5,
+                        6,
+                        7
+                      ],
+                      "edges": [
+                        "assuming",
+                        "assuming",
+                        "assuming"
+                      ],
+                      "title": "標準温度",
+                      "contents": "",
+                      "id": 2,
+                      "author": "self"
+                    }
+                  ],
+                  "parents": [
+                    14
+                  ],
+                  "edges": [
+                    "based on"
+                  ],
+                  "title": "標準状態でのV",
+                  "contents": "",
+                  "id": 7,
+                  "author": "self"
+                },
+                {
+                  "type": "model",
+                  "children": [
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        9
+                      ],
+                      "edges": [
+                        "assuming"
+                      ],
+                      "title": "ほぼ一定",
+                      "contents": "",
+                      "id": 10,
+                      "author": "self"
+                    }
+                  ],
+                  "parents": [
+                    14
+                  ],
+                  "edges": [
+                    "based on"
+                  ],
+                  "title": "固相液相のV",
+                  "contents": "",
+                  "id": 9,
+                  "author": "self"
+                },
+                {
+                  "type": "model",
+                  "children": [
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        11
+                      ],
+                      "edges": [
+                        "assuming"
+                      ],
+                      "title": "V=RT/P",
+                      "contents": "",
+                      "id": 12,
+                      "author": "self"
+                    },
+                    {
+                      "type": "premise",
+                      "children": [],
+                      "parents": [
+                        11
+                      ],
+                      "edges": [
+                        "assuming"
+                      ],
+                      "title": "フガシティー",
+                      "contents": "",
+                      "id": 13,
+                      "author": "self"
+                    }
+                  ],
+                  "parents": [
+                    14
+                  ],
+                  "edges": [
+                    "based on"
+                  ],
+                  "title": "気相のV",
+                  "contents": "",
+                  "id": 11,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    8,
+                    14,
+                    15
+                  ],
+                  "edges": [
+                    "applied to",
+                    "applied to",
+                    "applied to"
+                  ],
+                  "title": "系の温度",
+                  "contents": "",
+                  "id": 4,
+                  "author": "self"
+                },
+                {
+                  "type": "premise",
+                  "children": [],
+                  "parents": [
+                    8,
+                    14,
+                    15
+                  ],
+                  "edges": [
+                    "applied to",
+                    "applied to",
+                    "applied to"
+                  ],
+                  "title": "系の圧力",
+                  "contents": "",
+                  "id": 3,
+                  "author": "self"
+                }
+              ],
+              "parents": [
+                15,
+                17
+              ],
+              "edges": [
+                "based on",
+                "based on"
+              ],
+              "title": "反応のΔV",
+              "contents": "",
+              "id": 14,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                8,
+                14,
+                15
+              ],
+              "edges": [
+                "applied to",
+                "applied to",
+                "applied to"
+              ],
+              "title": "系の温度",
+              "contents": "",
+              "id": 4,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                8,
+                14,
+                15
+              ],
+              "edges": [
+                "applied to",
+                "applied to",
+                "applied to"
+              ],
+              "title": "系の圧力",
+              "contents": "",
+              "id": 3,
+              "author": "self"
+            },
+            {
+              "type": "premise",
+              "children": [],
+              "parents": [
+                15
+              ],
+              "edges": [
+                "assuming"
+              ],
+              "title": "閉鎖系",
+              "contents": "",
+              "id": 16,
+              "author": "self"
+            }
+          ],
+          "parents": [
+            18
+          ],
+          "edges": [
+            "based on"
+          ],
+          "title": "G(T,P)",
+          "contents": "",
+          "id": 15,
+          "author": "self"
+        }
+      ],
+      "parents": [
+        19
+      ],
+      "edges": [
+        "based on"
+      ],
+      "title": "反応のΔG=0",
+      "contents": "",
+      "id": 18,
+      "author": "self"
+    }
+  ],
+  "parents": [],
+  "edges": [],
+  "title": "Univariant",
+  "contents": "",
+  "id": 19,
+  "author": "self"
+}
