@@ -1,7 +1,9 @@
-import Node from "./modules/node.js"
-import Media from "./modules/media.js"
-import { ToggleElement, ExclusiveStateElement } from "../../../jslib/dom_toggler.js"
-import { Publisher, Subscriber } from "../../../jslib/pub_sub.js"
+import Node from "./modules/node.js";
+import Media from "./modules/media.js";
+import { ToggleElement, ExclusiveStateElement } from "../../../jslib/dom_toggler.js";
+import { Publisher, Subscriber } from "../../../jslib/pub_sub.js";
+import Viz from "viz.js";
+import * as d3 from "d3";
 
 const changeCss = function (s, url) {
   document.querySelector(s).href = url;
@@ -720,6 +722,7 @@ window.onload = function () {
         self.zoomLayer = svg.append("g");
 
         self.simulation = d3.forceSimulation()
+          //self.simulation = d3.layout.force()
           .force("charge", d3.forceManyBody()
             .strength(d => self.nodeType(d).charge)
             .distanceMax([500]))

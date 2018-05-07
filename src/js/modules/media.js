@@ -10,7 +10,7 @@
 (function (root, factory) {
 
   if (typeof define === "function" && define.amd) {
-    define(["../../../../jslib/marked.min", "../../../../node_modules/asciidoctor.js/dist/asciidoctor"], factory);
+    define(["marked", "asciidoctor.js"], factory);
   } else if (typeof exports === "object") {
 
     module.exports = factory();
@@ -25,14 +25,14 @@
   if (typeof require === 'undefined' && typeof _marked === 'function') {
     marked = _marked;
   } else {
-    marked = require("../../../../jslib/marked.min.js");
+    marked = require("marked");
   }
 
   let asciidoctor;
   if (typeof require === 'undefined' && typeof _Asciidoctor === 'function') {
     asciidoctor = _Asciidoctor(true);
   } else {
-    asciidoctor = require("../../../../node_modules/asciidoctor.js/dist/asciidoctor.js")(true);
+    asciidoctor = require("asciidoctor.js")(true);
   }
 
 
@@ -40,7 +40,7 @@
   if (typeof require === 'undefined') {
     fetchFunc = fetch;
   } else {
-    fetchFunc = require("../../../../node_modules/node-fetch");
+    fetchFunc = require("node-fetch");
   }
 
   const fetchWrapper = function (url, opts, timeout) {
