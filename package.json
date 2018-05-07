@@ -1,0 +1,20 @@
+{
+  "name": "logicStructure",
+  "version": "1.0.0",
+  "description": "論理構造は構成要素がしばしば入れ子になり, 複数の要素が同一の要素を参照することがある. そのような構造を分かりやすく, メンテナンスしやすく構築するため, 本アプリケーションでは, 論理の構成要素をフラットに並べて記述した後, 構成要素同士の参照関係を構築できるようにした.  \r また, 論理の構成要素の詳細情報をmarkdownやasciidoc, html, pdf文書に記録しておくことで, 必要に応じて内容表示することができるようにした.  \r 論理構造の構築には, reference\\_and_logic.jsに定義されたNodeクラスおよび関連するサブクラスを用い, 論理構造をJSONファイルとして出力する.  \r 論理構造の描画には, ref\\_and_logic.htmlに記述されたWeb application上でJSONファイルを読み込む.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:\\\\Users\\\\fmori\\\\OneDrive\\\\app.git\\\\logicStructure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.3"
+  }
+}

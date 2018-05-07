@@ -1,3 +1,7 @@
+import Node from "./modules/node.js"
+import Media from "./modules/media.js"
+import { ToggleElement, ExclusiveStateElement } from "../../../jslib/dom_toggler.js"
+import { Publisher, Subscriber } from "../../../jslib/pub_sub.js"
 
 const changeCss = function (s, url) {
   document.querySelector(s).href = url;
@@ -13,18 +17,20 @@ const changeCss = function (s, url) {
     hash[kv[0]] = kv[1];
   }
 
-  styleThemeFile = `./css/${(hash["theme"]) ? hash["theme"] : "light_theme"}.css`;
+  let styleThemeFile = `./css/${(hash["theme"]) ? hash["theme"] : "light_theme"}.css`;
   changeCss("#dynamic_theme", styleThemeFile);
 
 })()
 
-
+/*
 const {
   ToggleElement,
   ExclusiveStateElement
 } = Toggle;
 
+
 const { Publisher, Subscriber } = PubSub;
+*/
 
 /* Window onloaded =>  */
 
