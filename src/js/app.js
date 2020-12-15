@@ -400,8 +400,8 @@ window.onload = function () {
         })
 
       this.fo = nodeEnter.append("foreignObject")
-        .attr("width", 10)
-        .attr("height", 10)
+        .attr("width", 400)
+        .attr("height", 200)
 
       // gridレイアウト時に表示
       this.div = this.fo.append("xhtml:div")
