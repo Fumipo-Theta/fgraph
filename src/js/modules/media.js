@@ -10,7 +10,7 @@
 (function (root, factory) {
 
   if (typeof define === "function" && define.amd) {
-    define(["marked", "asciidoctor.js"], factory);
+    define(["marked", "asciidoctor"], factory);
   } else if (typeof exports === "object") {
 
     module.exports = factory();
@@ -32,7 +32,7 @@
   if (typeof require === 'undefined' && typeof _Asciidoctor === 'function') {
     asciidoctor = _Asciidoctor(true);
   } else {
-    asciidoctor = require("asciidoctor.js")(true);
+    asciidoctor = require("asciidoctor")(true);
   }
 
 
