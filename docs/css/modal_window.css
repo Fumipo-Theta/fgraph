@@ -334,7 +334,7 @@ li > .olist{
 .render_markdown ol.simple  li > p{
     background-color: var(--list-bg-color);
     flex: 1;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -345,7 +345,7 @@ li > .olist{
 .render_markdown ol.simple  li  ol  p{
     background-color: var(--list-vague-bg-color);
     flex: 1;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     padding: 30px;

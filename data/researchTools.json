@@ -34,7 +34,7 @@
       "author": "self"
     },
     "contents": [
-      "= 研究活動の構成要素とツール\n\n:imagesdir: ../../../powerpoint/Education/research_tools\n:stem: latexmath\n:toc: top\n:icons: font \n\n\ninclude::../../../powerpoint/Education/research_tools/dom_research.adoc[]"
+      "= 研究活動の構成要素とツール\n\n:imagesdir: ../../../powerpoint/Education/research_tools\n:stem: latexmath\n:toc: top\n:icons: font"
     ],
     "edges": [],
     "parents": [],
